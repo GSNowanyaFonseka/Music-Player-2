@@ -150,8 +150,7 @@ h3{
 
 .volume-control{
     display: flex;
-    margin-top: 10%;
-    margin-left: 20%;
+    margin: 10%;
     position:absolute;
     align-items:center;
     position:relative;
