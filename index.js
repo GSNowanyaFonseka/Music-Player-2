@@ -146,3 +146,23 @@ music.addEventListener('timeupdate', updateProgressBar);
 playerProgress.addEventListener('click',setProgressBar);
 
 loadMusic(songs[musicIndex]);
+
+// ajust volume
+const volume = document.getElementById('volume');
+const volumeSlider = document.getElementById('volume-slider');
+
+volume.addEventListener('click', function(){
+    // toggle display of the volume slide bar
+    if(volumeSlider.style.display === 'none' || volumeSlider.style.display ===''){
+        volumeSlider.style.display = 'block';
+    }else{
+        volumeSlider.style.display = 'none';
+    }
+});
+
+// adjust the volume using the slider
+volumeSlider.addEventListener('input',function(){
+    //adjust the volume of the audio
+    music.volume = this.value;
+});
+
