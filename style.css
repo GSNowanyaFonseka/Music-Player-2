@@ -1,0 +1,175 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 10px;
+    font-family: 'Yu Gothic UI Light';
+    font-size: 12px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background{
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    top: -20px;
+    left: 0;
+    z-index:-1;
+}
+
+.background img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 50%;
+    min-height: 50%;
+    filter: blur(15px);
+    -webkit-filter: blur(50px);
+    transform: scale(1.1);
+}
+
+.container{
+    background-color:rgb(189, 224, 248);
+    height: 550px;
+    width: 350px;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(7, 7, 69, 0.908);
+    transition: all 0.5s ease;
+}
+
+.container:hover{
+    box-shadow:0 15px 30px rgba(7, 7, 69, 0.908);
+}
+
+.player-img{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: -50px;
+    left: 50px;
+}
+
+.player-img img{
+    object-fit: cover;
+    border-radius: 20px;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    box-shadow: 0 15px 30px rgba(7, 7, 69, 0.908);
+}
+
+.player-img:hover img{
+    box-shadow: 0 15px 30px rgba(7, 7, 69, 0.908);
+}
+
+.player-img img.active{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+h3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0 0;
+}
+
+.player-progress{
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px 20px 35px;
+    height: 6px;
+    width: 90%;
+}
+
+.progress{
+    background-color: rgb(27, 31, 79);
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.music-duration{
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-controls{
+    position: relative;
+    top: -5px;
+    left: 110px;
+    width: 200px;
+}
+
+.fa-solid{
+    font-size: 20px;
+    color:#111e45f7;
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.fa-solid:hover{
+    filter: brightness(40%);
+}
+
+.play-button{
+    font-size: 30px;
+    position: relative;
+    top: 3px;
+}
+
+#footer{
+    background-color: rgb(6, 6, 60);
+    margin-top: 20px;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    bottom:0px;
+    left: 0px;
+    display:flex;
+    align-items: center;
+}
+
+#footer p{
+    text-align: center;
+    flex-grow: 1;
+    font-size: 15px;
+    margin: 0;
+
+}
+
+#footer img{
+    width: 50px;
+    margin-right: auto;
+    margin-left:20px;
+}
+
+
+
+
+
+
+
+
+
