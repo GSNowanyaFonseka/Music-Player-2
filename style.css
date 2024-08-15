@@ -199,6 +199,20 @@ h3{
         width:350px;
         height:530px;
     }
+
+    h2{
+        font-size: 25px;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    #footer p{
+        text-align: center;
+        font-size: 10px;
+    }
+
 }
 
 
